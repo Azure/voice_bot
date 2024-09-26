@@ -1,0 +1,15 @@
+__pycache__/
+
+.ipynb_checkpoints/
+
+assets/Speech meta-repository.docx
+
+output/
+
+input/
+
+.env
+
+customization/gen_personal_voice/
+
+customization/synthesize_audio_data/

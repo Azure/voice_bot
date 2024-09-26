@@ -1,0 +1,13 @@
+python-dotenv
+requests
+Pillow
+openai
+numpy
+sounddevice
+azure-cognitiveservices-speech
+pydub
+simpleaudio
+jupyter
+ipykernel
+matplotlib
+gradio
