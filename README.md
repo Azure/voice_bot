@@ -63,6 +63,13 @@ Run the cells in the notebook to generate and save the avatar images.
 1. **Copying Avatars**
 After generating the avatars, copy them from the assets subdirectory in the customization/gen_avatar directory to the assets directory in the voice bot directory.
 
+### Personal Voice 
+Personal voice is designed to enable users to create and use their own AI voices in apps built by our customers. 
+Once you create personal voice, update personal_voice key in config file. Useful resources with more detils on this are:
+1. [Personal Voice Blog](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/create-personalized-voices-with-azure-ai-speech/ba-p/4147073)
+2. [Personal Voice Documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-overview)
+3. [Personal Voice Code Sample](https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/samples/custom-voice/python/personal_voice_sample.py)
+
 ## Resources
 1. [Next-Gen Voice Bots.pdf](./assets/Next-Gen%20Voice%20Bots.pdf) 
 Best practice doc detailing Azure AI capabilities to create human like voice bot solutions
