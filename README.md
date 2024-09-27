@@ -1,14 +1,73 @@
-# Project
+## Voice BOT
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+This repository contains a Voice Bot demo designed to enhance sales promotion activities using AI-driven solutions. The voice bot leverages OpenAI's capabilities and Azure Cognitive Services to generate audio responses in real-time, thereby reducing latency and improving the customer interaction experience. 
 
-As the maintainer of this project, please make a few updates:
+![alt text](assets/image.png)
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+## Business Value
+
+- **Cost Savings**: Utilizing a Gen AI-driven solution can lead to almost 50% cost savings in customer support and sales operations.
+- **Improved Efficiency**: The new approach streamlines the interaction process, reducing response time significantly.
+- **Scalability**: The architecture supports scaling across different languages and themes, making it versatile for various business use cases.
+
+## Key Features
+
+### Latency Reduction Techniques
+
+1. **Streaming of STT**: Real-time streaming of audio for transcription as human speaks.
+1. **Streaming of Open AI Response**: Open AI Response is streamed and chunks passed to TTS
+1. **Smart concatenation of audio chunks**: Audio chunks are concatenated such that they seem as a continuous flow of words
+1. **Streaming of audio**: Smartly concatenated audio chunks are played in a streaming mode
+
+## Prerequisites
+- Azure Subscription
+- Azure Open AI 
+- Speech Service
+- Translator API
+- python 3.11 
+
+## Installation
+
+1. Clone the Repository:
+   ```shell
+   git clone <repository_url>
+   cd voice_bot_sales_promotion
+   ```
+1. Create .env:
+   ```shell
+   copy .env_sample .env
+   ```
+   Replace the values appropriately
+1. Install requirements:
+   ```shell
+   pip install -r requirements
+   ```
+1. Run the BOT 
+   ```shell
+   jupyter notebook voice_bot.ipynb
+   ```
+
+## Language Support
+Currently Hindi and English languages are supported.
+To add support for more languages, edit supported_languages section in config.json
+
+## Customization
+### Avatars
+Run the [gen_avatar.ipynb](./customization/gen_avatar/gen_avatar.ipynb) notebook and copy the generated avatars to the assets directory in the voice bot directory.
+
+1. **Running the Notebook**
+Ensure the .env file is correctly set up with the required environment variables.
+Create the config.json file with the necessary themes and prompts.
+Open the gen_avatar.ipynb notebook in Jupyter.
+Run the cells in the notebook to generate and save the avatar images.
+1. **Copying Avatars**
+After generating the avatars, copy them from the assets subdirectory in the customization/gen_avatar directory to the assets directory in the voice bot directory.
+
+## Resources
+1. [Next-Gen Voice Bots.pdf](./assets/Next-Gen%20Voice%20Bots.pdf) 
+Best practice doc detailing Azure AI capabilities to create human like voice bot solutions
+2. [VoiceBOT_3_Sep_2024.mp4](./assets/VoiceBOT_3_Sep_2024.mp4) 
+Recorded demo to experience the solution
 
 ## Contributing
 
